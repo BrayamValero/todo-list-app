@@ -23,62 +23,62 @@
 
     <!-- Content -->
     <div id="content">
+
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-secondary px-4 pt-4">
-            <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Togger Supported Content -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="w-100">
-                    <div class="form-row">
-                        <!-- Create Todo Input -->
-                        <div class="form-group col-md-12">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-main" type="button">Button</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tags & Options -->
-                        <div class="form-group col-lg-7 col-md-7 col-sm-12">
-                            <span class="badge badge-dark">Lorem, ipsum.</span>
-                            <span class="badge badge-dark">Lorem, ipsum.</span>
-                            <span class="badge badge-dark">Lorem, ipsum.</span>
-                        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-secondary p-3">
 
-                        <div class="form-group col-lg-5 col-md-5 col-sm-12 text-right">
-
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-                            <a tabindex="0" class="btn btn-sm btn-main ml-2" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                                <i class="fas fa-user"></i>
-                            </a>
-
-                        </div>
+            <!-- Form -->
+            <form class="w-100">
+                
+                <!-- Add Todo Row -->
+                <div class="form-row">
+                    <div class="col-lg-10 col-md-9 col-sm-12">
+                        <input type="text" class="form-control" placeholder="Add new Todo">
                     </div>
-                </form>
-            </div>
-            
+                    <div class="col-lg-2 col-md-3 col-sm-12 mt-2 mt-md-0">
+                        <button class="btn btn-main btn-block">Add</button>
+                    </div>
+                </div>
+
+                <!-- Tags & Options -->
+                <div class="form-row pt-3">
+                    <!-- Tags -->
+                    <!-- mt-2 mt-md-0 -->
+                    <div id="tags" class="col-lg-7 col-md-12 col-sm-12">
+                        <span class="tag mt-1 bg-dark">Mañana, 15 de Marzo del 2020.</span>
+                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
+                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
+                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
+                    </div>
+                    <!-- Options -->
+                    <div id="options" class="col-lg-5 col-md-12 col-sm-12 mt-2 mt-md-0 text-right">
+                        <a tabindex="0" class="btn btn-sm btn-main" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+            <!-- End of Form -->
+
         </nav>
+        <!-- End of Navbar -->
    
-        
     </div>
 
     <!-- Scripts/Plugins: jQuery, Popper, Bootstrap, Sweetalert2 -->

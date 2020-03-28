@@ -34,11 +34,6 @@ body {
     color: white;
 }
 
-// .btn{
-//     padding-left: 2rem !important;
-//     padding-right: 2rem !important;
-// }
-
 /* ---------------------------------------------------
     3. TEXTOS
 ----------------------------------------------------- */
@@ -83,6 +78,15 @@ body {
 .btn-main{
     color: white;
     background: $primary-color;
+    font-weight: bold;
+}
+
+.btn-main-add{
+    color: white;
+    background: $primary-color;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: bold;
 }
 
 .btn-main:hover{
@@ -100,10 +104,6 @@ body {
     4. BADGES
 ----------------------------------------------------- */
 
-.badge-main {
-    color: white;
-    background: $primary-color;
-}
 
 /* ---------------------------------------------------
     5. PLACEHOLDER
