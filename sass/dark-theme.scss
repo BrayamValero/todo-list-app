@@ -1,0 +1,115 @@
+/* ---------------------------------------------------
+    DARK-THEME.SCSS
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    1. COLORS
+----------------------------------------------------- */
+
+$primary-color: #2F2F2F;
+$secondary-color: #909090;
+$tertiary-color: #2F2F2F;
+
+$hover-color: #2F2F2F;
+$border-color: #2F2F2F;
+
+$main-font-color: #2F2F2F;
+$dark-font-color: #2F2F2F;
+$light-font-color: #2F2F2F;
+
+/* ---------------------------------------------------
+    2. ATRIBUTOS GLOBALES
+----------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // font-family: 'Circular', sans-serif !important;
+    min-height: 100vh;
+    font-size: 14px;
+    color: white;
+}
+
+// .btn{
+//     padding-left: 2rem !important;
+//     padding-right: 2rem !important;
+// }
+
+/* ---------------------------------------------------
+    3. TEXTOS
+----------------------------------------------------- */
+
+.bg-primary{
+    background: $primary-color;
+}
+
+.bg-secondary{
+    background: $secondary-color;
+}
+
+.text-primary{
+    color: $main-font-color !important;
+}
+
+.text-title {
+    color: $dark-font-color;
+}
+
+.text-subtitle {
+    color: $light-font-color;
+}
+
+.text-small {
+    color: $light-font-color;
+}
+
+.text-brand {
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+.text-dark {
+    color: $secondary-color;
+}
+
+/* ---------------------------------------------------
+    4. BOTONES
+----------------------------------------------------- */
+
+.btn-main{
+    color: white;
+    background: $primary-color;
+}
+
+.btn-main:hover{
+    color: white;
+    background: $primary-color;
+}
+
+// Forms
+.form-control:focus {
+    border-color: $primary-color !important;
+    box-shadow: inset 0 1px 1px rgba($primary-color, 0.1), 0 0 8px rgba($primary-color, 0.1) !important;
+}
+
+/* ---------------------------------------------------
+    4. BADGES
+----------------------------------------------------- */
+
+.badge-main {
+    color: white;
+    background: $primary-color;
+}
+
+/* ---------------------------------------------------
+    5. PLACEHOLDER
+----------------------------------------------------- */
+
+::placeholder {
+    color: $tertiary-color !important;
+    opacity: 1;
+}
