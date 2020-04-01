@@ -16,7 +16,7 @@ class task extends utility
 
     public function insert()
     {
-        $this->sql="inser into task (nam_task, des_task, dat_task, tim_task, fky_category, fky_color, fky_user,sta_imp_task, sta_task) values ('$this->nam_task', '$this->des_task', '$this->dat_task', '$this->tim_task', $this->fky_category, $this->fky_color, $this->fky_user, '$this->sta_imp_task', '$this->sta_task');";
+        $this->sql="insert into task (nam_task, des_task, dat_task, tim_task, fky_category, fky_color, fky_user,sta_imp_task, sta_task) values ('$this->nam_task', '$this->des_task', '$this->dat_task', '$this->tim_task', $this->fky_category, $this->fky_color, $this->fky_user, '$this->sta_imp_task', '$this->sta_task');";
         return $this->run();
     }
 

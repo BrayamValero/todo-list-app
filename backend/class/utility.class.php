@@ -29,7 +29,8 @@ class utility{
 
     public function run()
     {
-        return $this->mysql->query($this->sql);
+        echo $this->sql;
+        return $this->mysqli->query($this->sql);
     }
 
     public function assign_value()
