@@ -16,9 +16,18 @@
   <body>
 
     <!-- Sidebar -->
-    <nav id="sidebar" class="">
-        <h5>Lorem ipsum dolor sit.</h5>    
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit autem pariatur aliquam sed porro asperiores dolores delectus officia aliquid!</p>
+    <nav id="sidebar" class="sidebar">
+        <div class="container-fluid text-center my-3">
+            <img class="profile-pic rounded w-50 mb-2" src="icons/1.png" alt="Imagen">
+            <h4 class="name-surname">Brayam Valero</h4>
+            <p class="licence-type">Licencia Estandar</p>
+            <button class="btn btn-sm btn-secondary edit-settings">Editar</button>
+        </div>
+        <div class="container-fluid border py-3">
+            <h6 class="name-surname">Options</h6>
+            <a href="#"><i class="fas fa-palette"></i> Lorem, ipsum. </a>
+            <a href="#"><i class="fas fa-palette"></i> Lorem, ipsum. </a>
+        </div>
     </nav>
 
     <!-- Content -->
@@ -31,9 +40,16 @@
             <form class="w-100">
                 
                 <!-- Add Todo Row -->
-                <div class="form-row">
-                    <div class="col-lg-10 col-md-9 col-sm-12">
-                        <input type="text" class="form-control" placeholder="Add new Todo">
+                <div class="form-row mb-3">
+                    <div class="col-lg-10 col-md-9 col-sm-12 btn-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-main" type="button">
+                                    <i class="fas fa-star "></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-12 mt-2 mt-md-0">
                         <button class="btn btn-main btn-block">Add</button>
@@ -41,28 +57,25 @@
                 </div>
 
                 <!-- Tags & Options -->
-                <div class="form-row pt-3">
+                <div class="form-row">
                     <!-- Tags -->
                     <!-- mt-2 mt-md-0 -->
-                    <div id="tags" class="col-lg-7 col-md-12 col-sm-12">
-                        <span class="tag mt-1 bg-dark">Mañana, 15 de Marzo del 2020.</span>
-                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
-                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
-                        <span class="tag mt-1 bg-dark">15Lorem, ipsum.</span>
+                    <div id="tags" class="col-lg-8 col-md-12 col-sm-12">
+                        <span class="tag bg-dark">Mañana, 15 de Marzo del 2020.</span>
+                        <span class="tag bg-dark">15Lorem, ipsum.</span>
+                        <span class="tag bg-dark">15Lorem, ipsum.</span>
+                        <span class="tag bg-dark">15Lorem, ipsum.</span>
                     </div>
                     <!-- Options -->
-                    <div id="options" class="col-lg-5 col-md-12 col-sm-12 mt-2 mt-md-0 text-right">
-                        <a tabindex="0" class="btn btn-sm btn-main" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                            <i class="fas fa-user"></i>
+                    <div id="options" class="col-lg-4 col-md-12 col-sm-12 mt-3 mt-md-0 text-right">
+                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
+                            <i class="far fa-calendar-alt"></i>
                         </a>
                         <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-list"></i>
                         </a>
                         <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-palette"></i>
                         </a>
                         <a tabindex="0" class="btn btn-sm btn-main ml-1" role="button" data-placement="bottom" data-html="true" data-toggle="popover" data-trigger="focus" data-content="Content">
                             <i class="fas fa-user"></i>
