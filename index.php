@@ -23,10 +23,26 @@
             <p class="licence-type">Licencia Estandar</p>
             <button class="btn btn-sm btn-secondary edit-settings">Editar</button>
         </div>
-        <div class="container-fluid border py-3">
-            <h6 class="name-surname">Options</h6>
-            <a href="#"><i class="fas fa-palette"></i> Lorem, ipsum. </a>
-            <a href="#"><i class="fas fa-palette"></i> Lorem, ipsum. </a>
+        <div class="container-fluid segundaMitad py-3">
+            <h6 class="name-surname">Opciones</h6>
+            <div class="container">
+               <div class="row opcionesCarpetas">
+                <a href="#" class="col-md-12"><i class="fas fa-folder-plus"></i>Crear Categoria</a>
+                <a href="#" class="col-md-12"><i class="fas fa-folder-plus"></i>Crear Color</a>
+               </div>
+            </div>
+        </div>
+        <div class="container-fluid terceraMitad py-3">
+            <h6 class="name-surname">Categorias</h6>
+            <div class="container">
+               <div class="row opcionesCarpetas">
+                <a href="#" class="col-md-12"><i class="fas fa-folder"></i>Gaming</a>
+                <a href="#" class="col-md-12"><i class="fas fa-folder"></i>Work</a>
+                <a href="#" class="col-md-12"><i class="fas fa-folder"></i>HomeWork</a>
+                <a href="#" class="col-md-12"><i class="fas fa-folder"></i>Travel</a>
+                <a href="#" class="col-md-12"><i class="fas fa-folder"></i>Hobbies</a>
+               </div>
+            </div>
         </div>
     </nav>
 
