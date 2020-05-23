@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/dashboard.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+
 
     <title>Hello, world!</title>
   </head>
@@ -47,7 +49,7 @@
     </nav>
 
     <!-- Content -->
-    <div id="content">
+    <div id="content" class="content">
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark bg-secondary p-3">
@@ -107,8 +109,88 @@
 
         </nav>
         <!-- End of Navbar -->
-   
+      
+      
+        <div class="container-fluid etiquetas mt-4">
+            <div class="row ml-5 mt-4">
+                <div class="subtitulo">
+                    <h3> <i class="fas fa-star mr-2"></i>Favoritos <a href="#"><i class="fas fa-chevron-down ml-2"></i></a></h3>
+                </div>
+            </div>
+            <div class="row ml-5 mt-4 mr-3 contenido-recordar">
+              
+                <div class="container-fluid recordatorios">
+                    <div class="row parteTexto">
+                       <p class="texto "> <i class="fas fa-stop mr-3"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam iusto eos sit eveniet nobis rerum maiores, accusamus placeat itaque consequatur expedita vitae suscipit aperiam dolor.<a href="#"><i class="fas fa-chevron-down ml-3"></i></a> <a href="#"><i class=" ml-1 fas fa-pencil-alt"></i></a>  <a href="#"><i class="fas fa-times ml-1"></i></a> </p>
+                    </div>
+                    <div class="row parteTags">
+                       <div class="etiquetas">
+                        <i class="fas fa-star mr-2"></i>
+                        <i class="far fa-clock"><span class="ml-1">Hoy, 4:20 pm</span></i>
+                        <i class="categorias ml-2">categoria</i>
+                        <i class="categorias ml-2">Gaming</i>
+                        <i class="categorias ml-2">Work</i>
+                        <i class="categorias ml-2">Travel</i>
+                        <i class="categorias ml-2">hobbies</i>
+                       </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row ml-5 mt-4 mr-3 contenido-recordar">
+              
+                <div class="container-fluid recordatorios">
+                    <div class="row parteTexto">
+                       <p class="texto "> <i class="fas fa-stop mr-3"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis iusto animi placeat, illum nostrum eveniet dolor necessitatibus consequatur nobis laboriosam quibusdam quos deserunt obcaecati autem recusandae porro molestiae quaerat.<a href="#"><i class="fas fa-chevron-down ml-3"></i></a> <a href="#"><i class=" ml-1 fas fa-pencil-alt"></i></a>  <a href="#"><i class="fas fa-times ml-1"></i></a> </p>
+                    </div>
+                    <div class="row parteTags">
+                       <div class="etiquetas">
+                        <i class="fas fa-star mr-2"></i>
+                        <i class="far fa-clock"><span class="ml-1">Hoy, 4:20 pm</span></i>
+                        <i class="categorias ml-2">categoria</i>
+                        <i class="categorias ml-2">Gaming</i>
+                       </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="row ml-5 mt-4 mr-3 contenido-recordar">
+              
+                <div class="container-fluid recordatorios">
+                    <div class="row parteTexto">
+                       <p class="texto "> <i class="fas fa-stop mr-3"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit debitis. <a href="#"><i class="fas fa-chevron-down ml-3"></i></a> <a href="#"><i class=" ml-1 fas fa-pencil-alt"></i></a>  <a href="#"><i class="fas fa-times ml-1"></i></a> </p>
+                    </div>
+                    <div class="row parteTags">
+                       <div class="etiquetas">
+                        <i class="fas fa-star mr-2"></i>
+                        <i class="far fa-clock"><span class="ml-1">Hoy, 4:20 pm</span></i>
+                        <i class="categorias ml-2">categoria</i>
+                        <i class="categorias ml-2">Gaming</i>
+                        <i class="categorias ml-2">Work</i>
+                        <i class="categorias ml-2">Travel</i>
+                        <i class="categorias ml-2">hobbies</i>
+                        <i class="categorias ml-2">categoria</i>
+                        <i class="categorias ml-2">Gaming</i>
+                        <i class="categorias ml-2">Work</i>
+                        <i class="categorias ml-2">Travel</i>
+                        <i class="categorias ml-2">hobbies</i>
+                       </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
     </div>
+
+    
+
+
+
+
+
+
+
 
     <!-- Scripts/Plugins: jQuery, Popper, Bootstrap, Sweetalert2 -->
     <script src="js/jquery.min.js"></script>
@@ -116,7 +198,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="js/sweetalert2.all.min.js"></script>
-
     <script>
 
     // Bootstrap: Enable Tooltips & Popovers
@@ -130,6 +211,5 @@
     })
     
     </script>
-
   </body>
 </html>

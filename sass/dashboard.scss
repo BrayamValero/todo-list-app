@@ -51,7 +51,7 @@
 }
 
 
-/*momento gabo */
+/*momento gabo sidebar */
 
 .segundaMitad {
     
@@ -100,3 +100,148 @@
                 
                 }
     }
+
+.content{
+  min-height:100vh;
+  background-color: #E5E5E5;
+
+  .etiquetas{
+
+   .subtitulo{
+
+        h3{
+            
+            color:black;
+            font-size: 22px;  
+            display:flex;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            font-weight:900;
+            font-family: 'Roboto', sans-serif;
+            padding:0px;
+            margin:0px;
+ 
+            .fa-star{
+        
+                    align-items: flex-end;
+                    background-color:black;
+                     color:#ffff;
+                    font-size:16px;
+                    width:auto;
+                    height:auto;
+                    padding: 4px;
+                    border-radius:4px;
+            }
+        
+            .fa-chevron-down{
+            
+                    color:$secondary-color;
+                    font-size:17px;
+
+                    }
+            }
+         
+    }
+}
+
+
+   .contenido-recordar{
+       background-color: $secondary-color;
+       border-radius:5px;
+           .parteTexto{
+
+                border-bottom:1px solid #cccc;
+                padding:10px;
+                .texto{
+                    margin-bottom:0;
+                    p {
+                        font-size:15px; 
+                        }
+                        .fa-pencil-alt {
+                            color:white;
+                            background-color:$primary-color;
+                            font-size:10px;
+                            padding:5px;
+                            height:20px;
+                            width:20px;
+                        }
+                        .fa-chevron-down{
+                            color:white;
+                            background-color:$primary-color;
+                            height:20px;
+                            width:20px;
+                            font-size:10px;
+                            padding:5px;
+
+                            }
+                        .fa-times{
+                            color:white;
+                            background-color:$primary-color;
+                            height:20px;
+                            width:20px;    
+                            text-align:center;
+                            font-size:10px;
+                            padding:5px;
+                            
+                            }        
+                        
+                    }
+
+               }
+
+           .parteTags{
+
+               padding:10px;
+               display:flex;
+               flex-direction:row;
+               flex-wrap:wrap;
+
+                   .etiquetas{
+                       
+                       .fa-star{
+                           background-color:$primary-color;
+                           font-size:16px;
+                           width:auto;
+                           height:auto;
+                           padding: 8px;
+                           border-radius:4px;
+                           color:#ffff;
+
+                           }
+
+                       }
+
+                       .fa-clock {
+                           background-color:$primary-color;
+                           padding:8px;
+                           border-radius:6px;
+                            span {
+                                    font-family:roboto;
+                                    font-weight:900; 
+                                }          
+    
+                           }    
+                               i {
+                                   margin:10px 0px 5px 0px;}
+                       .categorias{
+                           
+                           background-color:$primary-color;
+                           padding:8px;
+                           border-radius:6px;    
+                           color:#ffff;    
+                           font-size:12px;
+                           font-family:roboto;
+                           font-weight:900;    
+                                   
+
+                           }        
+               }   
+
+       }
+
+
+
+}
+
+    
+
