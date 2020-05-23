@@ -1,8 +1,9 @@
 <?php 
 require_once("../class/category.class.php");
-$objCategory=new category;
+$objCategory=new Category;
+$objCategory->assignValue();
 
-$objCategory->assign_value();
+include_once("../../security/security-csrf.php");
 
 switch ($objCategory->action) {
     case 'insert':
