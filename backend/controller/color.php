@@ -1,8 +1,10 @@
 <?php
 require_once("../class/color.class.php");
-$objColor=new color;
+$objColor=new Color;
 
-$objColor->assign_value();
+$objColor->assignValue();
+
+include_once("../../security/security-csrf.php");
 
 switch ($objColor->action) {
     case 'insert':

@@ -1,16 +1,18 @@
 <?php
 require_once("../class/task.class.php");
-require_once("../class/task_list.class.php");
-$objTask=new task;
-$objTaskList=new task_list;
+require_once("../class/task-list.class.php");
+$objTask=new Task;
+$objTaskList=new TaskList;
 
-$objTask->assign_value();
+$objTask->assignValue();
+
+include_once("../../security/security-csrf.php");
 
 switch ($objTask->action) {
     case 'insert':
         $objTask->sta_task="I";
         $objTask->insert();
-        $last_id=$objTask->last_id_inserted();
+        $last_id=$objTask->lastIdInserted();
 
         if ($last_id>0) {
             

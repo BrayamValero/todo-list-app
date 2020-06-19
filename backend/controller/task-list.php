@@ -1,8 +1,10 @@
 <?php
-require_once("../class/task_list.class.php");
-$objTaskList=new task_list;
+require_once("../class/task-list.class.php");
+$objTaskList=new TaskList;
 
-$objTaskList->assign_value();
+$objTaskList->assignValue();
+
+include_once("../../security/security-csrf.php");
 
 switch ($objTaskList->action) {
     case 'insert':

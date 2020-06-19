@@ -1,8 +1,10 @@
 <?php
 require_once("../class/notification.class.php");
-$objNotification=new notification;
+$objNotification=new Notification;
 
-$objNotification->assign_value();
+$objNotification->assignValue();
+
+include_once("../../security/security-csrf.php");
 
 switch ($objNotification->action) {
     case 'insert':

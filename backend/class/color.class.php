@@ -1,35 +1,35 @@
 <?php
 require_once("utility.class.php");
-class  color extends utility
+class  Color extends Utility
 {
-    public $id_col;
-    public $nam_col;
-    public $cod_col;
-    public $fky_user;
-    public $sta_col;
+    public $colorId;
+    public $colorName;
+    public $colorCode;
+    public $userId;
+    public $colorStatus;
     
     public function insert()
     {
-        $this->sql="insert into color (nam_col, cod_col, fky_user, sta_col) values ('$this->nam_col','$this->cod_col', $this->fky_user, '$this->sta_col');";
+        $this->sql="insert into Color (colorName, colorCode, userId, colorStatus) values ('$this->colorName','$this->colorCode', $this->userId, '$this->colorStatus');";
         return $this->run();   
     }
 
     public function update()
     {
-        $this->sql="update color set nam_col='$this->nam_col' cod_col='$this->cod_col', fky_user=$this->fky_user, sta_col='$this->sta_col' where id_col=$this->id_col;";
+        $this->sql="update Color set colorName='$this->colorName' colorCode='$this->colorCode', userId=$this->userId, colorStatus='$this->colorStatus' where colorId=$this->colorId;";
         return $this->run();
     }
 
     public function delete()
     {
-        $this->sql="delete from color where id_col=$this->id_col;";
+        $this->sql="delete from Color where colorId=$this->colorId;";
         return $this->run();
     }
 
     public function list()
     {
-        $filter1 = ($this->sta_col!="") ? "and sta_col='$this->sta_col'" : "" ;
-        $this->sql="select * from color where 1=1 $filter1;";
+        $filter1 = ($this->colorStatus!="") ? "and colorStatus='$this->colorStatus'" : "" ;
+        $this->sql="select * from Color where 1=1 $filter1;";
         return $this->run();
     }
 }

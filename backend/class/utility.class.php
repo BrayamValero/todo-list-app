@@ -1,49 +1,11 @@
 <?php 
-
-class utility{
-
-    private $host;
-    private $user;
-    private $pass;
-    private $date_base;
-
-    public $mysqli;
-    public $sql;
-    public $pointer;
+require_once("conexion-server.class.php");
+class Utility extends Conexion
+{
     public $result;
     public $message;
-
-    public function __construct(){
-        $this->host="127.0.0.1";
-        $this->user="root";
-        $this->pass="";
-        $this->date_base="todo_list_app";
-        $this->connect();
-        ini_set("date.timezone", "America/Caracas");
-    }
-
-    public function connect()
-    {
-        $this->mysqli= new mysqli($this->host, $this->user, $this->pass, $this->date_base);
-    }
-
-    public function run()
-    {
-        echo $this->sql;
-        return $this->mysqli->query($this->sql);
-    }
-
-    public function assign_value()
-    {
-        foreach ($_REQUEST as $field_name => $value) {
-            $this->$field_name=$value;
-        }
-    }
-
-    public function extract_data()
-    {
-        return $this->pointer->fetch_assoc();
-    }
+    public $country;
+    public $browser;
 
     public function message()
     {
@@ -51,13 +13,40 @@ class utility{
             echo "$this->message";
         }else
             echo "It's not working"; 
-        
+    }	
+    
+    public function browser()
+    {
+        if(strpos($this->browser, 'MSIE') !== FALSE)
+            return 'Internet explorer';
+        elseif(strpos($this->browser, 'Edge') !== FALSE) //Microsoft Edge
+            return 'Microsoft Edge';
+        elseif(strpos($this->browser, 'Trident') !== FALSE) //IE 11
+            return 'Internet explorer';
+        elseif(strpos($this->browser, 'Opera Mini') !== FALSE)
+            return "Opera Mini";
+        elseif(strpos($this->browser, 'Opera') || strpos($this->browser, 'OPR') !== FALSE)
+            return "Opera";
+         elseif(strpos($this->browser, 'Firefox') !== FALSE)
+            return 'Mozilla Firefox';
+        elseif(strpos($this->browser, 'Chrome') !== FALSE)
+            return 'Google Chrome';
+        elseif(strpos($this->browser, 'Safari') !== FALSE)
+            return "Safari";
+        else
+            return "No Definido";         
     }
 
-    public function last_id_inserted()
-	{
-		return mysqli_insert_id($this->mysqli);
-	} 
+    public function country()
+    {
+        $dataArray = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$this->country));
+   
+        if($dataArray=="")
+        {
+            $dataArray->geoplugin_countryName="unknown";
+        }
+        return $dataArray->geoplugin_countryName;
+    }
 
 }
 ?>
